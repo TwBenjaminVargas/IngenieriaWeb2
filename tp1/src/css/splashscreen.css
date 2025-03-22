@@ -13,16 +13,19 @@
 }
 #vectorA
 {
-    z-index: 10;
     position: absolute;
     left: 0;
     top: 0;
+    width: 100vw;
+    height: auto;
 }
 #splashlogo
 {
-    z-index: 10;
+    width: 70vw;
+    height: auto;
 }
 
+/*Animacion*/
 @keyframes fadeOut {
     from {
         opacity: 1;

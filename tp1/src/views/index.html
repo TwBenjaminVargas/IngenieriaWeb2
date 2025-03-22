@@ -14,20 +14,21 @@
     </head>
     
     <body>
+        <!-- Splash screen-->
         <div id="splashscreen" >
             <img src="../img/fA.svg" alt="" id="vectorA">
             <img src="../img/Logo.svg" alt="Wibond" id="splashlogo">
         </div>
         <!-- Inicio de Sesion-->
-        <div>
-            <img src="../img/Logo.svg" alt="Wibond">
-            <form action="">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <a href="">Olvidaste tu contraseña?</a>
-                <input type="submit" value="Iniciar Sesion">
+        <div id="loginconteiner">
+            <img src="../img/Logo.svg" alt="Wibond" id="formlogo">
+            <form action="" id="loginform">
+                <input type="text" placeholder="Usuario" required id="logininput_user" class="logininput">
+                <input type="password" placeholder="Contraseña" required id="logininput_pass" class="logininput">
+                <a href="" id="logintext_fp">Olvidaste tu contraseña?</a>
+                <input type="submit" value="Iniciar Sesion" id="loginbutton">
+                <p id="logintext_reg">No tenés cuenta? - <a href="">Registrate</a></p>
             </form>
-            <p>No tenés cuenta? - <a href="">Registrate</a></p>
         </div>
     </body>
 </html>
