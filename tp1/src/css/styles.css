@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*--------------------------------------------------------------
 1. RESET DE ESTILOS
 --------------------------------------------------------------*/
@@ -5,4 +6,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*Invetigar*/
+    font-size: 15px;
+    font-family: 'Lato',sans-serif;
+}
+:root
+{
+    /*Colores*/
+    --ligth-blue: #303F9F33;
+    --soft-white:#F7F7F7;
+    --heavy-blue:#311B92;
+    --font-color-inputs:#535353;
+    --white:#FFFFFF;
+}
+a
+{text-decoration: none;}
+.inputg
+{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.66em;
+    letter-spacing: 0;
+    color: var(--font-color-inputs);
+
+    border-radius: 3vw;
+    border: none;
+    outline: none;
+}
+
+/*Si no lo hacia asi no me las tomaba*/
+.inputg::placeholder
+{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.66em;
+    letter-spacing: 0;
+    color:var(--font-color-inputs);
+}
+.inputblue
+{
+    background-color: var(--ligth-blue);
+}
+.inputwhite
+{
+    background-color: var(--soft-white);
+}
+
+.buttong
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.13em;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+
+    border-radius: 3vw;
+    border: none;
+
+    cursor: pointer;
+}
+.buttonblue
+{
+    color: var(--white);
+    background-color: var(--heavy-blue);
+
 }

@@ -10,24 +10,23 @@
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/splashscreen.css">
-
     </head>
     
     <body>
         <!-- Splash screen-->
         <div id="splashscreen" >
-            <img src="../img/fA.svg" alt="" id="vectorA">
+            <img src="../vector/fA.svg" alt="" id="vectorA">
             <img src="../img/Logo.svg" alt="Wibond" id="splashlogo">
         </div>
         <!-- Inicio de Sesion-->
         <div id="loginconteiner">
             <img src="../img/Logo.svg" alt="Wibond" id="formlogo">
-            <form action="" id="loginform">
-                <input type="text" placeholder="Usuario" required id="logininput_user" class="logininput">
-                <input type="password" placeholder="Contraseña" required id="logininput_pass" class="logininput">
-                <a href="" id="logintext_fp">Olvidaste tu contraseña?</a>
-                <input type="submit" value="Iniciar Sesion" id="loginbutton">
-                <p id="logintext_reg">No tenés cuenta? - <a href="">Registrate</a></p>
+            <form action="transfer.html" id="loginform">
+                <input type="text" placeholder="Usuario" id="logininput_user" class="inputg inputblue logininput loginicon">
+                <input type="password" placeholder="Contraseña" id="logininput_pass" class="inputg inputwhite logininput loginicon">
+                <a href="" id="logintext_fp" class="logintext">Olvidaste tu contraseña?</a>
+                <input type="submit" value="Iniciar Sesion" id="loginbutton" class="buttong buttonblue">
+                <p id="logintext_reg" class="longintext">No tenés una cuenta? - <a href="" id="logintext_reg_link" class="logintext">Registrate</a></p>
             </form>
         </div>
     </body>

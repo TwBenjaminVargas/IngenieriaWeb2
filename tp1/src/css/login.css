@@ -1,3 +1,8 @@
+:root
+{
+    --midnight-purple : #1C1939CC;
+    
+}
 #loginconteiner
 {
     z-index: 0;
@@ -18,21 +23,54 @@
 {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     margin-bottom: 23.5vh;
     width: 92.5vw;
 }
-.logininput
+.logininput{ height: 6.25vh; }
+.loginicon
 {
-    border-radius: 10px;
-    height: 6.25vh;
+    background-repeat: no-repeat;
+    background-position:1.94vw center;
+    background-size: 6.66 vw 6.66vh;
+    padding-left: 13.81%;
 }
+#logininput_user {background-image: url(../icons/user.svg);}
+
+#logininput_pass 
+{
+    margin-top: 1.25vh;
+    background-image: url(../icons/letter.svg);
+}
+
 #loginbutton
 {
     height: 7.5vh;
-    border-radius: 10px;
+    margin-top: 7.5vh;
 }
+.logintext{color: var(--midnight-purple);}
+
 #logintext_fp
 {
     align-self: flex-end;
+    font-size: 0.8em; /*Me parece muy pequeño 12 px*/
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    margin-top: 2vh;
+
+}
+#logintext_reg
+{
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.66em;
+    letter-spacing: 0;
+
+    align-self: center;
+    margin-top: 2.625vh;
+}
+#logintext_reg_link
+{
+    font-weight: 700;
 }
