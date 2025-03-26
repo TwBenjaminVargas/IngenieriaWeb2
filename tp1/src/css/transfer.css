@@ -1,0 +1,104 @@
+:root
+{
+    --white : #FFFFFF;
+    --electric-blue: #5252FF;
+
+}
+header
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.95vh;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.header_backbutton
+{
+    margin-left: 3.6vw;
+    background: none;
+    border: none;
+    background-image: url(../icons/back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 6.66vw;
+    height: 3vh;
+    cursor: pointer;
+}
+.logoconteiner
+{
+    display: flex;
+    margin-right: 4.44vw;
+}
+.imglogo
+{
+    height: 1.75vh;
+    width: 8.33vw;
+    object-fit: cover;
+    object-position: 10% 10%;
+    
+}
+.divconteiner
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+.span_1
+{
+    margin-top: 9.195vh;
+    margin-left: 5.83vw;
+    align-self: flex-start;
+}
+.div_accountstatus
+{
+    margin-top: 4.5vh;
+    display: flex;
+    height: 12vh;
+    width: 86.38vw;
+    background-color: var(--electric-blue);
+    border-radius: 2.77vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 4.72vw;
+    
+}
+.text_accountstatus{color: var(--white);}
+
+.span_2
+{
+    margin-top: 2.125vh;
+}
+.span_3
+{
+    margin-bottom: 2.375vh;
+}
+
+.div_optionselect
+{
+    display: flex;
+    flex-direction: column;
+    width: 87.5vw;
+    background-color:gray;
+    margin-top: 2vh;
+    border-radius: 2.77vw;
+}
+
+.button_next
+{
+    width: 79.16vw;
+    height: 6.41vh;
+    margin-top: auto;
+    margin-bottom: 3.83vh;
+
+}

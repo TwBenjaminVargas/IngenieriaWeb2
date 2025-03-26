@@ -3,7 +3,7 @@
     --midnight-purple : #1C1939CC;
     
 }
-#loginconteiner
+.loginconteiner
 {
     z-index: 0;
     display: flex;
@@ -13,43 +13,48 @@
     align-items: center;
     justify-content: space-between;
 }
-#formlogo
+
+.formlogo
 {
     width: 35.5vw;
     height: auto;
     margin-top: 12.88vh;
 }
-#loginform
+
+.loginform
 {
     display: flex;
-    flex-direction: column;
     margin-bottom: 23.5vh;
+    flex-direction: column;
     width: 92.5vw;
 }
-.logininput{ height: 6.25vh; }
-.loginicon
+
+.logininput
 {
+    height: 6.25vh;
     background-repeat: no-repeat;
     background-position:1.94vw center;
     background-size: 6.66 vw 6.66vh;
     padding-left: 13.81%;
 }
-#logininput_user {background-image: url(../icons/user.svg);}
 
-#logininput_pass 
+.logininput_user {background-image: url(../icons/user.svg);}
+
+.logininput_pass 
 {
-    margin-top: 1.25vh;
     background-image: url(../icons/letter.svg);
+    margin-top: 1.25vh;
 }
 
-#loginbutton
+.loginbutton
 {
     height: 7.5vh;
     margin-top: 7.5vh;
 }
+
 .logintext{color: var(--midnight-purple);}
 
-#logintext_fp
+.logintext_fp
 {
     align-self: flex-end;
     font-size: 0.8em; /*Me parece muy pequeño 12 px*/
@@ -60,7 +65,7 @@
     margin-top: 2vh;
 
 }
-#logintext_reg
+.logintext_reg
 {
     font-weight: 400;
     font-size: 1em;
@@ -70,7 +75,4 @@
     align-self: center;
     margin-top: 2.625vh;
 }
-#logintext_reg_link
-{
-    font-weight: 700;
-}
+.logintext_reg_link{font-weight: 700;}

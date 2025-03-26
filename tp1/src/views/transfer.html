@@ -8,8 +8,28 @@
 
         <!--Hojas de estilos-->
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/transfer.css">
     </head>
     <body>
-        Pagina para las transferencias
+        <header>
+            <button class="header_backbutton" onclick="window.location.href='index.html'"></button>
+            <div class="logoconteiner">
+                <img src="../img/Logo.svg" alt="logo" class="imglogo">
+                <img src="../img/W I B O N D.svg" alt="">
+            </div>
+        </header>
+        <div class="divconteiner">
+            <span class="span_1">Transferir dinero</span>
+            <div class="div_accountstatus">
+                <span class="text_accountstatus span_2">Dinero disponible</span>
+                <span class="text_accountstatus span_3">ARS $ 1.236,00</span>
+            </div>
+            <div class="div_optionselect">
+                <span>Tipo de destino</span>
+                <input type="radio" name="option" class="option" value="Destinatario único">Destinatario único
+                <input type="radio" name="option" class="option" value="Múltiples destinatarios">Múltiples destinatarios
+            </div>
+            <button class="buttong buttonblue button_next" >Siguiente</button>
+        </div>
     </body>
 </html>
