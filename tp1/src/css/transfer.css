@@ -2,6 +2,7 @@
 {
     --white : #FFFFFF;
     --electric-blue: #5252FF;
+    --radio-blue:#507CDD;
 
 }
 header
@@ -41,7 +42,7 @@ header
     height: 1.75vh;
     width: 8.33vw;
     object-fit: cover;
-    object-position: 10% 10%;
+    object-position:50% 20%;
     
 }
 .divconteiner
@@ -90,9 +91,39 @@ header
     flex-direction: column;
     width: 87.5vw;
     background-color:gray;
+    overflow: hidden;
     margin-top: 2vh;
     border-radius: 2.77vw;
 }
+.individual-option-conteiner
+{
+    display: flex;
+    background-color: var(--white);
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.option
+{
+    appearance: none;
+    width: 6.66vw;
+    height: 6.66vw;
+    border-radius: 50%;
+    border: 0.83vw solid var(--radio-blue); /* Color del borde del círculo */
+    background-color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.option:checked::after {
+    content: "";
+    width:60%;
+    height: 60%;
+    border-radius: 50%; /*+Asegura que sea un circulo*/
+    background-color: var(--radio-blue); /* Color del punto central */
+  }
 
 .button_next
 {
