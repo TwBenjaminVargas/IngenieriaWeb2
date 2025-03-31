@@ -3,6 +3,7 @@
     --white : #FFFFFF;
     --electric-blue: #5252FF;
     --radio-blue:#507CDD;
+    --option-black:#1F1F1F;
 
 }
 header
@@ -90,19 +91,33 @@ header
     display: flex;
     flex-direction: column;
     width: 87.5vw;
-    background-color:gray;
+    height: 19vh;
+    background-color:var(--option-black);
     overflow: hidden;
     margin-top: 2vh;
     border-radius: 2.77vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.span_4
+{
+    margin-top: 1.625vh;
+    margin-left: 5vw;
+    margin-bottom: 1.625vh;
+    color: var(--white);
 }
 .individual-option-conteiner
 {
     display: flex;
+    padding-left: 5vw;
+    padding-right: 5.277vw;
     background-color: var(--white);
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
 
 }
+
 .option
 {
     appearance: none;
@@ -117,13 +132,14 @@ header
     justify-content: center;
     transition: background-color 0.3s;
 }
-.option:checked::after {
+.option:checked::after
+{
     content: "";
     width:60%;
     height: 60%;
     border-radius: 50%; /*+Asegura que sea un circulo*/
     background-color: var(--radio-blue); /* Color del punto central */
-  }
+}
 
 .button_next
 {
