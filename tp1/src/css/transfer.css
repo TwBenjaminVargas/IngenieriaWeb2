@@ -4,7 +4,8 @@
     --electric-blue: #5252FF;
     --radio-blue:#507CDD;
     --option-black:#1F1F1F;
-
+    --option-gray: #4D4D4D;
+    --divisorline:#00000033;
 }
 header
 {
@@ -60,6 +61,12 @@ header
     margin-top: 9.195vh;
     margin-left: 5.83vw;
     align-self: flex-start;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 2.5vh;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 .div_accountstatus
 {
@@ -73,16 +80,31 @@ header
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 4.72vw;
+
+    background-image: url(/tp1/src/vector/Ellipse1.svg), url(/tp1/src/vector/Ellipse2.svg);
+    background-repeat: no-repeat;
     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .text_accountstatus{color: var(--white);}
 
 .span_2
 {
     margin-top: 2.125vh;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 1.5vh;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 .span_3
 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 3.125vh;
+    line-height: 100%;
+    letter-spacing: 0%;
     margin-bottom: 2.375vh;
 }
 
@@ -104,6 +126,13 @@ header
     margin-left: 5vw;
     margin-bottom: 1.625vh;
     color: var(--white);
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.5vh;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 .individual-option-conteiner
 {
@@ -117,7 +146,29 @@ header
     flex-grow: 1;
 
 }
+.divisorlineext
+{
+    display: flex;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+.divisorlineint
+{
+    width: 81.38vw;
+    height:1px;
+    background-color: var(--divisorline);
+}
+.label-option
+{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.5vh;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--option-gray);
 
+}
 .option
 {
     appearance: none;

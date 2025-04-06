@@ -1,0 +1,1 @@
+window.onload = setTimeout(()=>document.getElementById("splashscreen").style.opacity="0" ,4000);

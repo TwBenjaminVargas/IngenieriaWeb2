@@ -1,4 +1,4 @@
-.splashscreen
+#splashscreen
 {
     width: 100vw;
     height: 100vh;
@@ -9,7 +9,7 @@
     justify-content: center;
     background-color: #ffffff;
 
-    animation: fadeOut 1s ease-out 2s forwards;
+    transition: opacity 1s ease;
 }
 .vectorA
 {
@@ -23,15 +23,4 @@
 {
     width: 70vw;
     height: auto;
-}
-
-/*Animacion*/
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
 }
