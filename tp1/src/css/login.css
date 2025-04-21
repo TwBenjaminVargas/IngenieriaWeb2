@@ -1,6 +1,8 @@
 :root
 {
     --midnight-purple : #1C1939CC;
+    --red-intense: #d90429;
+    --disabled-button : #a3b1c6;
     
 }
 .loginconteiner
@@ -21,7 +23,7 @@
     margin-top: 12.88vh;
 }
 
-.loginform
+#loginform
 {
     display: flex;
     margin-bottom: 23.5vh;
@@ -37,16 +39,23 @@
     background-size: 6.66 vw 6.66vh;
     padding-left: 13.81%;
 }
+#advertencia-span
+{   align-self: center;
+    margin-bottom: 1.25vh;
+    color:var(--red-intense);
+    font-weight: bold;
+    display: none;
+}
 
-.logininput_user {background-image: url(../icons/user.svg);}
+#logininput_user {background-image: url(../icons/user.svg);}
 
-.logininput_pass 
+#logininput_pass 
 {
     background-image: url(../icons/letter.svg);
     margin-top: 1.25vh;
 }
 
-.loginbutton
+#loginbutton
 {
     height: 7.5vh;
     margin-top: 7.5vh;
