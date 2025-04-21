@@ -57,8 +57,24 @@
 
 #loginbutton
 {
+    background-color: var(--heavy-blue);
     height: 7.5vh;
     margin-top: 7.5vh;
+    transition: transform 0.2s ease;
+}
+
+#loginbutton:disabled {
+    background-color:var(--disabled-button);
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+#loginbutton:active
+{
+    background-color:var(--disabled-button);
+    opacity: 0.6;
+    transform: scale(0.98);
+
 }
 
 .logintext{color: var(--midnight-purple);}

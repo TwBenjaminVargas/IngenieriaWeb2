@@ -1,19 +1,21 @@
 window.onload = function()
 {
+    const splash = document.getElementById("splashscreen");
     const passinput = document.getElementById("logininput_pass");
     const userinput = document.getElementById("logininput_user");
-    const submitBtn = document.getElementById("loginbutton");
     const advspan =document.getElementById("advertencia-span");
-    const splash = document.getElementById("splashscreen");
-
+    const submitBtn = document.getElementById("loginbutton");
+    submitBtn.disabled = true;
+    
     //splashcreen
     setTimeout(()=>
         {
             splash.style.opacity="0";
             setTimeout(()=>splash.style.display = "none",1000);  
-    
+            
         },4000);
-
+        
+        
     function showError(e,mensaje, campo)
     {
         e.preventDefault();
@@ -28,8 +30,17 @@ window.onload = function()
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(correo);
     }
-
-   
+    
+    function inputsComplete()
+    {
+        if(userinput.value.length > 0 && passinput.value.length > 0)
+            submitBtn.disabled = false;
+        else
+        submitBtn.disabled = true;
+    }
+    
+    userinput.addEventListener("input",inputsComplete);
+    passinput.addEventListener("input",inputsComplete);
     
     document.getElementById("loginform").addEventListener("submit",
         function(e)
@@ -38,16 +49,18 @@ window.onload = function()
             advspan.textContent = "";
             userinput.style.border = "";
             passinput.style.border = "";
-    
-            if (userinput.value.length == 0)
-                showError(e,"Todos los campos deben completarse",userinput);
-            if (passinput.value.length == 0)
-                showError(e,"Todos los campos deben completarse",passinput);
-            else if (!esCorreoValido(userinput.value))
+            if (!esCorreoValido(userinput.value))
                 showError(e, "El correo no es válido", userinput);
             else if(passinput.value.length <= 8)
                 showError(e,"La contraseña debe tener mas de 8 caracteres",passinput);
+            else
+            {
+                localStorage.setItem("user",userinput.value);
+                localStorage.setItem("pass",passinput.value);
+                window.location.href
+            }
         }
     )
 }
 
+1
